@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Root from "./routes/Root/Root.jsx";
-import About from "./routes/About/About.jsx";
-import Contact from "./routes/Contact/Contact.jsx";
+import Root from "./routes/Root";
+import About from "./routes/About";
+import Contact from "./routes/Contact";
 
 import "./index.css";
 
