@@ -1,6 +1,14 @@
 #about {
   display: inline-flex;
   align-items: flex-end;
-  width: 46vh;
   margin: 6vh;
+}
+
+@media only screen and (max-width: 1020px) {
+  #about {
+    margin: 1vh;
+    height: 100%;
+    padding-left: 10vh;
+    padding-bottom: 6vh;
+  }
 }
