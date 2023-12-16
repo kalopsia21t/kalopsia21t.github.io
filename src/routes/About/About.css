@@ -1,0 +1,6 @@
+#about {
+  display: inline-flex;
+  align-items: flex-end;
+  width: 46vh;
+  margin: 6vh;
+}
