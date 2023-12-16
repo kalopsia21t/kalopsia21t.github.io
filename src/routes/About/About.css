@@ -12,3 +12,11 @@
     padding-bottom: 6vh;
   }
 }
+
+@media only screen and (width: 390px) and (height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  #about {
+    margin: 1vh;
+    height: 100%;
+    padding: 0;
+  }
+}
