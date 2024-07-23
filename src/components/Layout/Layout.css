@@ -1,0 +1,36 @@
+#layout-container {
+  position: absolute;
+  width: calc(100% - 8vh);
+  height: calc(100% - 8vh);
+  border: 1px solid white;
+}
+
+#layout-content {
+  display: flex;
+  height: 100%;
+}
+
+#header {
+  display: inline-flex;
+  flex-direction: column;
+  width: 50vh;
+  height: 30vh;
+  margin: 6vh;
+}
+
+#main {
+  display: flex;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 4vh;
+}
+
+@media only screen and (max-width: 1020px) {
+  #main {
+    flex-direction: column;
+  }
+  #header {
+    width: 20vh;
+    margin: 1vh;
+  }
+}
