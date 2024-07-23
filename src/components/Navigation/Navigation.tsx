@@ -1,22 +1,33 @@
 import { Link } from "react-router-dom";
 
-import "./Navigation.css";
+import styled from "styled-components";
+
+const Nav = styled.nav`
+  margin-top: 4vh;
+`;
+
+const Li = styled.li`
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
+`;
 
 function Navigation() {
   return (
-    <nav id="nav">
+    <Nav>
       <ul>
-        <li>
+        <Li>
           <Link to={"/"}>Home</Link>
-        </li>
-        <li>
+        </Li>
+        <Li>
           <Link to={"/about"}>About</Link>
-        </li>
-        <li>
+        </Li>
+        <Li>
           <Link to={"/contact"}>Contact</Link>
-        </li>
+        </Li>
       </ul>
-    </nav>
+    </Nav>
   );
 }
 

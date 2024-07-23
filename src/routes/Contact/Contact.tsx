@@ -1,9 +1,16 @@
-import "./Contact.css";
+import styled from "styled-components";
+
+const ContactText = styled.div`
+  display: inline-flex;
+  align-items: flex-end;
+  width: 46vh;
+  margin: 6vh;
+`;
 
 export default function Contact() {
   return (
     <>
-      <div id="contact">Linkedin</div>
+      <ContactText>Linkedin</ContactText>
     </>
   );
 }
