@@ -7,6 +7,8 @@ const AboutContainer = styled.div`
   display: inline-flex;
   align-items: flex-end;
   margin: 6vh;
+  font-family: "Raleway";
+  font-size: 1.8vh;
 
   @media only screen and (max-width: 1020px) {
     margin: 1vh;

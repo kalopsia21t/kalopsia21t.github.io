@@ -20,6 +20,7 @@ const InfoContainer = styled.div`
 
 const SmallLinkExternal = styled(LinkExternal)`
   width: 1.5vh;
+  margin-left: 0.5vh;
 `;
 
 export default function Info() {

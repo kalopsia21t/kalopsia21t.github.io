@@ -14,6 +14,8 @@ const Li = styled.li`
 `;
 
 const WrappedLink = styled(Link)`
+  font-family: "Raleway";
+  font-size: 1.8vh;
   text-decoration: none;
 
   color: rgba(255, 255, 255, 0.87);
