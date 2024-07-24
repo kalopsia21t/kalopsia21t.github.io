@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
-const AboutText = styled.div`
+const AboutContainer = styled.div`
+  position: absolute;
+  bottom: 0;
+  max-width: 56vh;
   display: inline-flex;
   align-items: flex-end;
   margin: 6vh;
 
   @media only screen and (max-width: 1020px) {
     margin: 1vh;
-    height: 100%;
-    padding-left: 10vh;
+    max-width: 24vh;
     padding-bottom: 6vh;
   }
 
@@ -26,7 +28,7 @@ const about_me = `Born in Kherson, Ukraine.
 export default function About() {
   return (
     <>
-      <AboutText>{about_me}</AboutText>
+      <AboutContainer>{about_me}</AboutContainer>
     </>
   );
 }

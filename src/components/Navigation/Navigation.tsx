@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import styled from "styled-components";
 
@@ -13,19 +13,48 @@ const Li = styled.li`
   row-gap: 1vh;
 `;
 
+const WrappedLink = styled(Link)`
+  text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.87);
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.43);
+  }
+`;
+
+const links = [
+  {
+    pathname: "/",
+    label: "Home",
+  },
+  {
+    pathname: "/info",
+    label: "Info",
+  },
+  {
+    pathname: "/contact",
+    label: "Contact",
+  },
+];
+
 function Navigation() {
+  const location = useLocation();
+
+  const activeLink = "●";
+
   return (
     <Nav>
       <ul>
-        <Li>
-          <Link to={"/"}>Home</Link>
-        </Li>
-        <Li>
-          <Link to={"/about"}>About</Link>
-        </Li>
-        <Li>
-          <Link to={"/contact"}>Contact</Link>
-        </Li>
+        {links.map((link, index) => {
+          return (
+            <Li key={`${index}-${link.label}`}>
+              <WrappedLink to={link.pathname}>
+                {link.pathname === location.pathname ? activeLink : link.label}
+              </WrappedLink>
+            </Li>
+          );
+        })}
       </ul>
     </Nav>
   );
