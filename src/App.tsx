@@ -9,8 +9,6 @@ import Info from "./routes/Info";
 
 import GlobalStyles from "./styles";
 
-import "./index.css";
-
 const router = createBrowserRouter([
   {
     path: "/",
