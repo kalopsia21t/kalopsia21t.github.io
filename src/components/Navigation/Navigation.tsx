@@ -13,18 +13,6 @@ const Li = styled.li`
   row-gap: 1vh;
 `;
 
-const WrappedLink = styled(Link)`
-  font-family: "Raleway";
-  font-size: 1.8vh;
-  text-decoration: none;
-
-  color: rgba(255, 255, 255, 0.87);
-
-  &:hover {
-    color: rgba(255, 255, 255, 0.43);
-  }
-`;
-
 const links = [
   {
     pathname: "/",
@@ -51,9 +39,9 @@ function Navigation() {
         {links.map((link, index) => {
           return (
             <Li key={`${index}-${link.label}`}>
-              <WrappedLink to={link.pathname}>
+              <Link to={link.pathname}>
                 {link.pathname === location.pathname ? activeLink : link.label}
-              </WrappedLink>
+              </Link>
             </Li>
           );
         })}
