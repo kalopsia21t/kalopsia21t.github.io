@@ -27,13 +27,22 @@ export default function Info() {
       <a
         href="https://www.linkedin.com/in/taras-palii-a1b414116/"
         target="_blank"
+        rel="noopener noreferrer"
       >
         LinkedIn <SmallLinkExternal />
       </a>
-      <a href="https://www.codewars.com/users/kalopsia21t" target="_blank">
+      <a
+        href="https://www.codewars.com/users/kalopsia21t"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         CodeWars <SmallLinkExternal />
       </a>
-      <a href="https://github.com/kalopsia21t" target="_blank">
+      <a
+        href="https://github.com/kalopsia21t"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         GitHub <SmallLinkExternal />
       </a>
     </InfoContainer>
