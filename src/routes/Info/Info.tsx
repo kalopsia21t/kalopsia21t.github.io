@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { LinkExternal } from "@styled-icons/boxicons-regular/LinkExternal";
 
-import WrappedLink from "../../components/WrappedLink";
-
 const InfoContainer = styled.div`
   position: absolute;
   bottom: 0;
@@ -26,21 +24,18 @@ const SmallLinkExternal = styled(LinkExternal)`
 export default function Info() {
   return (
     <InfoContainer>
-      <WrappedLink
+      <a
         href="https://www.linkedin.com/in/taras-palii-a1b414116/"
         target="_blank"
       >
         LinkedIn <SmallLinkExternal />
-      </WrappedLink>
-      <WrappedLink
-        href="https://www.codewars.com/users/kalopsia21t"
-        target="_blank"
-      >
+      </a>
+      <a href="https://www.codewars.com/users/kalopsia21t" target="_blank">
         CodeWars <SmallLinkExternal />
-      </WrappedLink>
-      <WrappedLink href="https://github.com/kalopsia21t" target="_blank">
+      </a>
+      <a href="https://github.com/kalopsia21t" target="_blank">
         GitHub <SmallLinkExternal />
-      </WrappedLink>
+      </a>
     </InfoContainer>
   );
 }
