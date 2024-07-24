@@ -24,12 +24,21 @@ const Header = styled.header`
   }
 `;
 
+const HeaderTitle = styled.h1`
+  font-family: "Raleway";
+`;
+
+const HeaderSubTitle = styled.h3`
+  font-family: "Raleway";
+  font-style: italic;
+`;
+
 function Layout() {
   return (
     <LayoutContainer>
       <Header>
-        <h1>Taras Palii</h1>
-        <h3>Software Engineer</h3>
+        <HeaderTitle>Taras Palii</HeaderTitle>
+        <HeaderSubTitle>Software Engineer</HeaderSubTitle>
 
         <Navigation />
       </Header>

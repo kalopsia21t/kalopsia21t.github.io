@@ -5,8 +5,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/Root";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
+import Info from "./routes/Info";
 
-import "./index.css";
+import GlobalStyles from "./styles";
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,12 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        path: "/about",
+        path: "/",
         element: <About />,
+      },
+      {
+        path: "/info",
+        element: <Info />,
       },
       {
         path: "/contact",
@@ -27,6 +32,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
+    <GlobalStyles />
     <RouterProvider router={router} />
   </React.StrictMode>
 );
