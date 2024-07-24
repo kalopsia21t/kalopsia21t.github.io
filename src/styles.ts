@@ -1,30 +1,27 @@
 import { createGlobalStyle } from "styled-components";
 
-import RalewayRegular from "./fonts/Raleway-Regular.ttf";
-import RalewayItalic from "./fonts/Raleway-Italic.ttf";
-import RalewayBold from "./fonts/Raleway-Bold.ttf";
-
 export default createGlobalStyle`
     @font-face {
         font-family: 'Raleway';
         font-weight: normal;
         font-style: normal;
         font-display: swap;
-        src: url(RalewayRegular);
+        src: url('/fonts/Raleway-Regular.ttf');
     }
     @font-face {
         font-family: 'Raleway';
         font-weight: bold;
         font-style: italic;
         font-display: swap;
-        src: url(RalewayItalic);
+        src: url('/fonts/Raleway-Italic.ttf');
     }
     @font-face {
         font-family: 'Raleway';
         font-weight: bold;
         font-style: normal;
         font-display: swap;
-        src: url(RalewayBold);
+        src: url('/fonts/Raleway-Bold.ttf');
+
     }
 
     :root {
